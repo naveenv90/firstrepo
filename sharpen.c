@@ -54,6 +54,7 @@ UINT64 cyclesElapsed(UINT64 stopTS, UINT64 startTS)
 #ifdef IPP
 void printCpuType(IppCpuType cpuType)
 {
+    //checking CPU architecture
     if(cpuType==0) {printf("ippCpuUnknown 0x00\n"); return;}
     if(cpuType==0x01) {printf("ippCpuPP 0x01 Intel Pentium processor\n");return;}
     if(cpuType==0x02) {printf("ippCpuPMX 0x02 Pentium processor with MMX technology\n");return;}
